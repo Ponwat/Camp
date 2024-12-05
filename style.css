@@ -1,4 +1,4 @@
-/* Global Styles */
+/* ตั้งค่า Global */
 body {
     margin: 0;
     padding: 0;
@@ -11,6 +11,25 @@ body {
     color: #fff;
 }
 
+/* โลโก้ IoT */
+.header-logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+}
+
+.header-logo .logo {
+    width: 220px; /* เพิ่มขนาดโลโก้ */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.header-logo .logo:hover {
+    transform: scale(1.1); /* ซูมเมื่อเมาส์ชี้ */
+}
+
+/* กล่อง Login */
 .login-wrapper {
     background: #fff;
     color: #333;
@@ -116,13 +135,4 @@ body {
 
 .extras a:hover {
     color: #2563eb;
-}
-
-.success-message,
-.error-message {
-    color: #fff;
-    background: #3b82f6;
-    border-radius: 8px;
-    padding: 15px;
-    margin-top: 20px;
 }
